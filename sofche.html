@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Edition | Our Story</title>
+    <style>
+        :root {
+            --bg-color: #f9f7f2; /* Creamy magazine paper color */
+            --text-color: #1a1a1a;
+            --accent-color: #902e2e; /* Deep romantic red */
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 40px 20px;
+            line-height: 1.6;
+        }
+
+        .magazine-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            border: 1px solid #ddd;
+            background: white;
+            padding: 50px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+
+        /* Magazine Header */
+        header {
+            text-align: center;
+            border-bottom: 2px solid var(--text-color);
+            margin-bottom: 40px;
+            padding-bottom: 10px;
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            margin: 0;
+            font-weight: 900;
+        }
+
+        .issue-info {
+            display: flex;
+            justify-content: space-between;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+            margin-top: 5px;
+        }
+
+        /* Layout Grid */
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1fr 350px;
+            gap: 40px;
+            align-items: start;
+        }
+
+        /* Video Frame */
+        .video-frame {
+            border: 15px solid #fff;
+            outline: 1px solid #ddd;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            position: relative;
+            background: #000;
+        }
+
+        video {
+            width: 100%;
+            display: block;
+        }
+
+        /* Text Column */
+        .text-column h2 {
+            font-size: 2rem;
+            margin-top: 0;
+            color: var(--accent-color);
+            font-style: italic;
+        }
+
+        .dropcap {
+            float: left;
+            font-size: 4rem;
+            line-height: 1;
+            padding-right: 10px;
+            color: var(--accent-color);
+        }
+
+        /* Responsive design for phones */
+        @media (max-width: 768px) {
+            .content-grid { grid-template-columns: 1fr; }
+            .magazine-container { padding: 20px; }
+            header h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="magazine-container">
+        <header>
+            <h1>The Valentine Edition</h1>
+            <div class="issue-info">
+                <span>A Study of Grace and Us</span>
+                <span>February 14, 2026</span>
+                <span>Special Feature</span>
+            </div>
+        </header>
+
+        <div class="content-grid">
+            <div class="video-frame">
+                <video controls autoplay muted loop>
+                    <source src="/Users/kdimitrov/Desktop/Cinematic_Video_Generation_From_Photo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <div class="text-column">
+                <h2>To My Forever Valentine</h2>
+                <p><span class="dropcap">T</span>ake my hand, take my whole life too, for I can’t help falling in love with you. (E.Presley)</p>
+                
+                <p>Dear Sophche,</p>
+                <p>Thank you for giving a meaning to the act of love to me. Ever since we started to love each other, you have been showing me what it feels like to have a best friend, a lover, a partner and a wild animal all at once. I love you as my best friend for all the times you have been right by my side, even despite hundreds of kilometers. I love you as my lover for the beautiful, sexy and passionate person that you are. I love you as my partner for every moment we went through and shared together. No wild animals allowed here!</p>
+
+                <p>With all my love,<br><strong>Kaloyan</strong></p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
